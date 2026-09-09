@@ -21,7 +21,7 @@ async function api(path, options = {}) {
 
 document.getElementById('healthBtn').onclick = () => api('/api/v1/health').catch(() => {});
 document.getElementById('getAccountBtn').onclick = () => api(`/api/v1/accounts/${encodeURIComponent(accountInput.value.trim())}`).catch(() => {});
-document.getElementById('mutationsBtn').onclick = () => api(`/api/v1/accounts/${encodeURIComponent(accountInput.value.trim())}/mutationz`).catch(() => {});
+document.getElementById('mutationsBtn').onclick = () => api(`/api/v1/accounts/${encodeURIComponent(accountInput.value.trim())}/mutations`).catch(() => {});
 
 document.getElementById('createBtn').onclick = async () => {
   try {
